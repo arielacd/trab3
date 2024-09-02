@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco 3 - Monitoramento de Salas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bloco 3 - Monitoramento de Salas</h1>
+    </header>
+
+    <main>
+        <section id="salas">
+            <div class="room-category">
+                <h2>Salas de Aula</h2>
+                <div class="room-container">
+                    <a href="#sala1" class="room">Sala de Aula 1</a>
+                    <a href="#sala2" class="room">Sala de Aula 2</a>
+                    <a href="#sala3" class="room">Sala de Aula 3</a>
+                    <a href="#sala4" class="room">Sala de Aula 4</a>
+                </div>
+            </div>
+
+            <div class="room-category">
+                <h2>Laboratórios de Informática</h2>
+                <div class="room-container">
+                    <a href="#laboratorio1" class="room">Laboratório 1</a>
+                    <a href="#laboratorio2" class="room">Laboratório 2</a>
+                </div>
+            </div>
+
+            <div class="room-category">
+                <h2>Sala dos Professores</h2>
+                <a href="#sala-professores" class="room">Sala dos Professores</a>
+            </div>
+        </section>
+
+        <section id="sala1" class="room-details">
+            <h2>Sala de Aula 1</h2>
+            <p><strong>Status:</strong> <span id="status-sala1">Livre</span></p>
+            <div class="status-buttons">
+                <button class="status-button" onclick="alterarStatus('sala1', 'Livre')">Livre</button>
+                <button class="status-button" onclick="alterarStatus('sala1', 'Ocupado')">Ocupado</button>
+                <button class="status-button" onclick="alterarStatus('sala1', 'Em Manutenção')">Em Manutenção</button>
+            </div>
+            <a href="#salas" class="back-to-top">Voltar para cima</a>
+        </section>
+
+        <section id="sala2" class="room-details">
+            <h2>Sala de Aula 2</h2>
+            <p><strong>Status:</strong> <span id="status-sala2">Ocupado</span></p>
+            <div class="status-buttons">
+                <button class="status-button" onclick="alterarStatus('sala2', 'Livre')">Livre</button>
+                <button class="status-button" onclick="alterarStatus('sala2', 'Ocupado')">Ocupado</button>
+                <button class="status-button" onclick="alterarStatus('sala2', 'Em Manutenção')">Em Manutenção</button>
+            </div>
+            <a href="#salas" class="back-to-top">Voltar para cima</a>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bloco 3 - Monitoramento de Salas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
